@@ -6,7 +6,10 @@ public class LCSFinder implements LCSFinderInterface {
    
     
     @Override
-    //Algorithm: 
+    //Naive Algorithm is used in this program. Basically, program will iterate through each character in each sequence,
+    //  starting from the last character. Then, characters will be compared to determine the LCS
+    //Time complexity is O(2^n), which means time complexity will grow exponentially
+    //Therefore, Dynamic Programming approach will work better in this case
     public int findLCS(String firstSequence, int firstLength, String secondSequence, int secondLength) {  
         
         if (firstLength == 0 || secondLength == 0) {
@@ -30,7 +33,7 @@ public class LCSFinder implements LCSFinderInterface {
     }
     
     @Override
-    //find the larger value between two
+    //print the longest common subsequence of the two DNA sequences
     public void printLCS (String firstSequence, int firstLength, String secondSequence, int secondLength) {
         //Not yet finshed. Will soon return to complete it.
     }
